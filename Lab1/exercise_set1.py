@@ -9,14 +9,19 @@ import matplotlib as plt
 
 # ex1
 def exercise1():
-    #test
-    pass
+    a, b = map(int, input("Insert the two values: ").split())
+    if a*b>1000:
+        print(a+b)
+        return a+b
+    print(a*b)
+    return a*b
 
 
 # ex2
 def exercise2():
-    pass
-
+    x = range(1,10)
+    for i in range(1,len(x)):
+        print(x[i]+x[i-1])
 
 # ex3
 def exercise3():
@@ -71,9 +76,11 @@ def exercise12():
 if __name__ == "__main__":
     print("EXERCISE SET 1")
     print("EX1")
-    exercise1()
+    #exercise1()
     print("EX2")
     exercise2()
+    '''
+
     print("EX3")
     exercise3()
     print("EX4")
@@ -94,3 +101,4 @@ if __name__ == "__main__":
     exercise11()
     print("EX12")
     exercise12()
+    '''
